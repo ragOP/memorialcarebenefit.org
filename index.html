@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog - memorialcarebenefit.org</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    #lofo {
+      width: 20%;
+    }
+    .top-sticky {
+      background-color: #000000;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .counter-bar {
+      background-color: #f8f8f8;
+      color: white;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .counter-bar img {
+      width: 20px;
+      margin-right: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .blog-post {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .blog-post h2 {
+      margin-bottom: 10px;
+    }
+    .blog-post p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 50px;
+      padding: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      #lofo { width: 50%; }
+      .counter-bar img { width: 10%; }
+    }
+  </style>
 </head>
 <body>
-  d
+
+  <div class="top-sticky">
+    <img id="lofo" src="./ilaka.png" alt="logo" />
+  </div>
+
+  <div class="counter-bar">
+    <img src="./lives.png" alt="live" />
+    <em><span id="counter">89,421</span> Visitors Read Our Blog Today!</em>
+  </div>
+
+  <div class="container">
+    <div class="blog-post">
+      <h2>📢 Final Call for $25,000 Benefit</h2>
+      <p><em>Posted on June 16, 2025</em></p>
+      <p>Learn how seniors are accessing life insurance benefits worth up to $25,000 in just a few minutes. This quick guide explains eligibility and steps.</p>
+    </div>
+
+    <div class="blog-post">
+      <h2>✅ Why Burial Coverage is Important in 2025</h2>
+      <p><em>Posted on June 14, 2025</em></p>
+      <p>Burial costs are rising. Discover how coverage plans can ease the financial burden for your loved ones and ensure peace of mind.</p>
+    </div>
+
+    <div class="blog-post">
+      <h2>🔍 How to Check If You Qualify</h2>
+      <p><em>Posted on June 10, 2025</em></p>
+      <p>We break down the simple 2-question process to check eligibility and connect with official providers across the U.S.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 memorialcarebenefit.org • <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a>
+  </footer>
+
+  <script>
+    const counter = document.getElementById("counter");
+    setInterval(() => {
+      let current = parseInt(counter.innerText.replace(/,/g, ""));
+      let inc = Math.floor(Math.random() * 3) + 1;
+      current += inc;
+      counter.innerText = current.toLocaleString();
+    }, 3000);
+  </script>
+
 </body>
 </html>
