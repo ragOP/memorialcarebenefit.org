@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Congratulations</title>
+  <title>Congratula</title>
   <link rel="stylesheet" href="stylepage.css">
 <script src="https://b-js.ringba.com/CAfdb7eb5bdaa24fb8a155f293ece397ae" async></script>
 
